@@ -53,7 +53,26 @@ struct ContentView: View {
 							}
 							.padding()
 						}
-						FBPost()
+						
+						FBPost(
+							imageName: "person1",
+							name: "Mark Zuckerberg",
+							post: "Hey guys i made this cool website called Facebook"
+						)
+						Spacer()
+						
+						FBPost(
+							imageName: "person2",
+							name: "Jeff Bezos",
+							post: "Hey guys i made this cool e-commerce called Amazon"
+						)
+						Spacer()
+						
+						FBPost(
+							imageName: "person3",
+							name: "Bill Gates",
+							post: "Hey guys i made this cool OS called Windows"
+						)
 						Spacer()
 					}
 				}
@@ -65,10 +84,14 @@ struct ContentView: View {
 }
 
 struct FBPost: View {
+	let imageName: String
+	let name: String
+	let post: String
+	
 	var body: some View {
 		VStack {
 			HStack {
-				Image("person1")
+				Image(imageName)
 					.resizable()
 					.frame(width: 50, height: 50, alignment: .center)
 					.aspectRatio(contentMode: .fill)
@@ -76,7 +99,7 @@ struct FBPost: View {
 				
 				VStack {
 					HStack {
-						Text("Mark Zuckerberg")
+						Text(name)
 							.foregroundStyle(.blue)
 							.font(.system(size: 18, weight: .semibold, design: .default))
 						Spacer()
@@ -94,17 +117,36 @@ struct FBPost: View {
 			Spacer()
 			
 			HStack {
-				Text("Hey guys i made this cool website called Facebook")
+				Text(post)
 					.font(.system(size: 24, weight: .regular, design: .default))
 					.multilineTextAlignment(.leading)
 				Spacer()
 			}
 			
+			Spacer()
+			
 			HStack {
+				Button(action: {}, label: {
+					Text("Like")
+				})
 				
+				Spacer()
+				
+				Button(action: {}, label: {
+					Text("Comment")
+				})
+				
+				Spacer()
+				
+				Button(action: {}, label: {
+					Text("Share")
+				})
 			}
+			.padding()
 		}
 		.padding()
+		.background(Color(.systemBackground))
+		.cornerRadius(7)
 	}
 }
 
