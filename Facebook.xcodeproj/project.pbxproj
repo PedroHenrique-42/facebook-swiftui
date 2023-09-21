@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		964E8A352AB3C8770055B847 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964E8A342AB3C8770055B847 /* Images.xcassets */; };
 		966D977B2AB27C1900ADC66C /* FacebookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D977A2AB27C1900ADC66C /* FacebookApp.swift */; };
 		966D977D2AB27C1900ADC66C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D977C2AB27C1900ADC66C /* ContentView.swift */; };
 		966D977F2AB27C1D00ADC66C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966D977E2AB27C1D00ADC66C /* Assets.xcassets */; };
 		966D97822AB27C1D00ADC66C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966D97812AB27C1D00ADC66C /* Preview Assets.xcassets */; };
+		967580E32ABCE9AF00BE2CA0 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967580E22ABCE9AF00BE2CA0 /* StoriesView.swift */; };
+		967580E62ABCE9F800BE2CA0 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967580E52ABCE9F800BE2CA0 /* PostView.swift */; };
+		967580E82ABCEA7B00BE2CA0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967580E72ABCEA7B00BE2CA0 /* HeaderView.swift */; };
+		967580EB2ABCEB4300BE2CA0 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967580EA2ABCEB4300BE2CA0 /* PostModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		964E8A342AB3C8770055B847 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		966D97772AB27C1900ADC66C /* Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966D977A2AB27C1900ADC66C /* FacebookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookApp.swift; sourceTree = "<group>"; };
 		966D977C2AB27C1900ADC66C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		966D977E2AB27C1D00ADC66C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		966D97812AB27C1D00ADC66C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		967580E22ABCE9AF00BE2CA0 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		967580E52ABCE9F800BE2CA0 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		967580E72ABCEA7B00BE2CA0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		967580EA2ABCEB4300BE2CA0 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,11 @@
 		966D97792AB27C1900ADC66C /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				967580E92ABCEB3600BE2CA0 /* Models */,
+				967580E12ABCE99C00BE2CA0 /* Views */,
 				966D977A2AB27C1900ADC66C /* FacebookApp.swift */,
 				966D977C2AB27C1900ADC66C /* ContentView.swift */,
+				964E8A342AB3C8770055B847 /* Images.xcassets */,
 				966D977E2AB27C1D00ADC66C /* Assets.xcassets */,
 				966D97802AB27C1D00ADC66C /* Preview Content */,
 			);
@@ -65,6 +78,24 @@
 				966D97812AB27C1D00ADC66C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		967580E12ABCE99C00BE2CA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				967580E22ABCE9AF00BE2CA0 /* StoriesView.swift */,
+				967580E52ABCE9F800BE2CA0 /* PostView.swift */,
+				967580E72ABCEA7B00BE2CA0 /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		967580E92ABCEB3600BE2CA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				967580EA2ABCEB4300BE2CA0 /* PostModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964E8A352AB3C8770055B847 /* Images.xcassets in Resources */,
 				966D97822AB27C1D00ADC66C /* Preview Assets.xcassets in Resources */,
 				966D977F2AB27C1D00ADC66C /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967580E82ABCEA7B00BE2CA0 /* HeaderView.swift in Sources */,
+				967580EB2ABCEB4300BE2CA0 /* PostModel.swift in Sources */,
 				966D977D2AB27C1900ADC66C /* ContentView.swift in Sources */,
 				966D977B2AB27C1900ADC66C /* FacebookApp.swift in Sources */,
+				967580E62ABCE9F800BE2CA0 /* PostView.swift in Sources */,
+				967580E32ABCE9AF00BE2CA0 /* StoriesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -274,6 +310,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +339,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
